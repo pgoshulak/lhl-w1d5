@@ -3,14 +3,6 @@ luhn = {}
 luhn.validate = (num) => {
   var numString = String(num)
 
-  /*
-  // Get check digit
-  var checkDigit = numString[numString.length-1]
-  
-  // Get non-check digits
-  var nonCheckDigits = numString.substring(0, numString.length-1)
-
-  */
   // Split num into array of digits
   var digitsArray = numString.split('').map((str) => {
     return Number(str);
